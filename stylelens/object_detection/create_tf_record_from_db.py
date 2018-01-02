@@ -96,13 +96,8 @@ def dict_to_tf_example(data, image_subdirectory='JPEGImages'):
   ymax.append(float(data['bbox']['y2']) / height)
   classes_text.append(data['category_name'].encode('utf8'))
   classes.append(int(data['category_class']))
-<<<<<<< Updated upstream
-  difficult = int([0])
-  truncated = int([0])
-=======
   difficult = [0]
   truncated = [0]
->>>>>>> Stashed changes
   poses.append('Frontal'.encode('utf8'))
 
   example = tf.train.Example(features=tf.train.Features(feature={
