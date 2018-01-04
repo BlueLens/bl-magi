@@ -1,0 +1,218 @@
+acid                         2
+acid wash                    2
+applique                     2
+bead                         2
+beaded                       2
+beaded chiffon               2
+beaded sheer                 2
+bejeweled                    2
+bleach                       2
+bleached                     2
+bleached denim               2
+brocade                      2
+burnout                      2
+cable                        2
+cable knit                   2
+cable-knit                   2
+canvas                       2
+chambray                     2
+chambray drawstring          2
+chenille                     2                     
+chiffon                      2   
+chiffon lace                 2
+chiffon layered              2
+chiffon shirt                2
+chino                        2
+chunky                       2
+chunky knit                  2
+classic cotton               2
+classic denim                2
+classic knit                 2
+classic woven                2
+clean                        2
+clean wash                   2
+cloud                        2
+cloud wash                   2
+coated                       2                       
+corduroy                     2
+cotton                       2
+cotton drawstring            2
+cotton knit                  2
+cotton-blend                 2
+crepe                        2
+crepe woven                  2
+crinkled                     2
+crochet                      2
+crochet embroidered          2
+crochet knit                 2
+crochet lace                 2
+crochet mesh                 2
+crochet overlay              2
+crocheted                    2
+crocheted lace               2
+cuffed denim                 2
+cutout lace                  2
+damask                       2       
+denim                        2
+denim drawstring             2
+denim shirt                  2
+denim utility                2
+dip-dye                      2
+dip-dyed                     2
+distressed                   2
+dye                          2
+elasticized                  2             
+embellished                  2
+embroidered                  2
+embroidered gauze            2    
+embroidered lace             2
+embroidered mesh             2
+embroidered woven            2
+embroidery                   2
+eyelash                      2
+eyelash knit                 2
+eyelash lace                 2
+eyelet                       2
+faded                        2
+fair                         2
+fair isle                    2
+faux                         2
+faux fur                     2
+faux leather                 2
+faux shearling               2
+faux suede                   2
+feather                      2
+floral knit                  2
+floral lace                  2
+floral mesh                  2
+foulard                      2        
+frayed                       2
+french                       2
+french terry                 2
+fur                          2
+fuzzy                        2
+fuzzy knit                   2
+gauze                        2
+gauzy                        2
+gem                          2
+georgette                    2
+gingham                      2
+glass                        2
+glitter                      2
+heathered                    2
+heathered knit               2
+herringbone                  2
+jacquard                     2
+knit                         2
+knit lace                    2
+lace                         2
+lace layered                 2
+lace mesh                    2
+lace overlay                 2
+lace panel                   2
+lace paneled                 2
+lace pleated                 2
+lace print                   2
+lace sheer                   2
+lace-paneled                 2
+lacy                         2
+lattice                      2
+layered                      2
+leather                      2
+leather paneled              2
+leather quilted              2
+leather-paneled              2
+led                          2
+loop                         2
+loose                        2
+loose-knit                   2
+mesh                         2
+mesh overlay                 2
+mesh panel                   2
+mesh paneled                 2
+mesh-paneled                 2
+metallic                     2
+mineral                      2
+mineral wash                 2
+neon                         2
+neoprene                     2     
+nets                         2
+netted                       2
+nylon                        2
+oil                          2
+organza                      2
+origami                      2
+overlay                      2  
+panel                        2
+paneled                      2
+patched                      2
+patchwork                    2
+perforated                   2    
+pima                         2                         
+pintuck                      2                 
+pintuck pleated              2
+pintucked                    2
+plaid                        2
+plaid shirt                  2
+pleat                        2
+pleated                      2
+pleated woven                2
+pointelle                    2
+ponte                        2
+print satin                  2
+print scuba                  2
+purl                         2
+quilted                      2       
+rhinestone                   2
+rib                          2
+rib-knit                     2
+ribbed                       2
+ribbed-knit                  2
+ripped                       2
+ruched                       2
+ruffle                       2
+ruffled                      2
+sateen                       2
+satin                        2
+scuba                        2
+seam                         2
+seamless                     2
+seersucker                   2
+semi-sheer                   2
+sequin                       2
+sequined                     2
+shaggy                       2
+shearling                    2
+sheer                        2         
+sheer-paneled                2
+shirred                      2
+shredded                     2
+sleek                        2
+slick                        2                   
+slub                         2
+slub-knit                    2
+sparkling                    2
+stone                        2
+stone washed                 2
+stones                       2
+stretch                      2
+stretch-knit                 2
+studded                      2
+suede                        2
+tapestry                     2
+tartan                       2
+terry                        2
+textured                     2
+textured woven               2
+tie-dye                      2
+tiered                       2
+tile                         2
+tulle                        2
+tweed                        2
+twill                        2
+velvet                       2
+velveteen                    2
+waffle                       2       
+wash                         2
+washed                       2
+woven                        2
