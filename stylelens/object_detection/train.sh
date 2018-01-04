@@ -8,5 +8,6 @@ export MODEL_BASE_PATH='/home/lion/dataset/deepfashion3'
 
 python ./train.py \
     --logtostderr \
+    --num_clones 7 \
     --pipeline_config_path=$MODEL_BASE_PATH/models/model/ssd_inception_v2_3class.config \
     --train_dir=$MODEL_BASE_PATH/models/model/train

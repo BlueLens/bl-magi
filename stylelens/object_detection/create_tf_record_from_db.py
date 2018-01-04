@@ -71,7 +71,7 @@ def dict_to_tf_example(data, image_subdirectory='JPEGImages'):
                     is not a valid JPEG
   """
 
-  full_path = os.path.join('/dataset', data['file'])
+  full_path = os.path.join('/home/lion/dataset', data['file'])
   with tf.gfile.GFile(full_path, 'rb') as fid:
     encoded_jpg = fid.read()
   encoded_jpg_io = io.BytesIO(encoded_jpg)
@@ -96,13 +96,8 @@ def dict_to_tf_example(data, image_subdirectory='JPEGImages'):
   ymax.append(float(data['bbox']['y2']) / height)
   classes_text.append(data['category_name'].encode('utf8'))
   classes.append(int(data['category_class']))
-<<<<<<< Updated upstream
-  difficult = int([0])
-  truncated = int([0])
-=======
   difficult = [0]
   truncated = [0]
->>>>>>> Stashed changes
   poses.append('Frontal'.encode('utf8'))
 
   example = tf.train.Example(features=tf.train.Features(feature={

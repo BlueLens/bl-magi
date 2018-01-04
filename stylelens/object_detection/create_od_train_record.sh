@@ -8,5 +8,5 @@ export DB_DATASET_PORT="27017"
 echo $PYTHONPATH
 
 python create_tf_record_from_db.py \
-    --train_output_path=./train.record \
-    --eval_output_path=./eval.record
+    --train_output_path=./tfrecord_dataset/train.record \
+    --eval_output_path=./tfrecord_dataset/eval.record
