@@ -1,4 +1,4 @@
-source activate bl-magi
+#source activate bl-magi
 export PYTHONPATH=$PYTHONPATH:`pwd`/../../tensorflow:`pwd`/../../slim
 export DB_DATASET_HOST="35.187.193.199"
 export DB_DATASET_NAME="bl-db-dataset"
@@ -8,4 +8,4 @@ export DB_DATASET_PORT="27017"
 echo $PYTHONPATH
 
 python get_object_by_fabric.py \
-    --fabric_dataset_path=/home/lion/fabric_dataset 
+    --fabric_dataset_path=/home/lion/fabric_dataset/ 
