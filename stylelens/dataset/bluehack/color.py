@@ -1,6 +1,7 @@
 import os
 import uuid
 import urllib.request
+import argparse
 from PIL import Image
 from util import s3
 
@@ -12,60 +13,91 @@ AWS_DIR = 'bluehack/color'
 IMG_WIDTH = 300
 IMG_HEIGHT = 300
 
+COLOR_DATA = [
+    ('red', 'CCO2OO'),
+    ('orange', 'FB930B'),
+    ('yellow', 'FEFF00'),
+    ('green', '00CC00'),
+    ('mint', '00C1C6'),
+    ('blue', '1700FF'),
+    ('purple', '752CA7'),
+    ('pink', 'FF98BF'),
+    ('white', '000000'),
+    ('gray', '999999'),
+    ('black', 'FFFFFF'),
+    ('brown', '885319')
+]
+
+parser = argparse.ArgumentParser(description='ArgParser')
+parser.add_argument('--jsondir', type=str, default=os.path.join(os.path.expanduser('~'), 'Downloads/google/'),
+                    help='The directory location stored crawled data from google search')
+
 AWS_ACCESS_KEY = os.environ['AWS_ACCESS_KEY'].replace('"', '')
 AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY'].replace('"', '')
 
 storage = s3.S3(AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY)
 
-# ex) stylelens-dataset / bluehack / color / red / xxxxx.jpg
-def save_image_to_storage(color_name, file_name):
-  file = file_name + '.jpg'
-  key = os.path.join(AWS_DIR, color_name, file_name + '.jpg')
-  is_public = True
-  file_url = storage.upload_file_to_bucket(AWS_DATASET_BUCKET, file, key, is_public=is_public)
-  return file_url
 
+class GoogleSaver:
+    def __init__(self, directory):
+        self.directory = directory
+        os.mkdir(os.path.join(directory, 'temp'))
 
-def crawl_from_google_images()
+    def __save_image_to_storage(self, crawled_item):
+        downloaded_file_name = self.__download_image(crawled_item['url'])
+        key = os.path.join(AWS_DIR, crawled_item['color_name'], downloaded_file_name + '.jpg')
+        is_public = True
+        file_url = storage.upload_file_to_bucket(AWS_DATASET_BUCKET, downloaded_file_name, key, is_public=is_public)
+        return file_url
 
-  data = []
+    def __crawl_from_google_images(self):
+        crawled_data = []
+        for color_item in COLOR_DATA:
+            color_folder = os.path.join(os.path.join(self.directory, 'color'), color_item[0])
+            if os.path.exists(color_folder):
+                for file in os.listdir(color_folder):
+                    with open(os.path.join(color_folder, file)) as f:
+                        for line in f.readlines():
+                            color_file_item = {
+                                'url': line.strip(),
+                                'color_name': color_item[0],
+                                'color_code': color_item[1]
+                            }
+                            crawled_data.append(color_file_item)
+        return crawled_data
 
-  item = {}
-  item['url'] = 'http://www.google.com/xxx/yyy/zzz.jpg'
-  item['color_name'] = 'red'
-  item['color_code'] = 'CC0200'
-  data.append(item)
+    def __download_image(self, url):
+        try:
+            # f = urllib.urlopen(urllib.quote(image_path.encode('utf8'), '/:'))
+            f = urllib.request.urlopen(url)
+            im = Image.open(f).convert('RGB')
+            im = im.resize((IMG_WIDTH, IMG_HEIGHT), Image.ANTIALIAS)
+            download_file_name = os.path.join(os.path.join(self.directory, 'temp'), str(uuid.uuid4()) + '.jpg')
+            im.save(download_file_name)
+        except Exception as e:
+            print(e)
 
-  return data
+        return download_file_name
 
-def download_image(url):
-  try:
-    # f = urllib.urlopen(urllib.quote(image_path.encode('utf8'), '/:'))
-    f = urllib.request.urlopen(url)
-    im = Image.open(f).convert('RGB')
-    im = im.resize((IMG_WIDTH, IMG_HEIGHT), Image.ANTIALIAS)
-    file_name = str(uuid.uuid4()) + '.jpg'
-    im.save(file_name)
-  except Exception as e:
-    print(e)
+    def execute(self):
+        api_instance = Colors()
 
-  return file_name
+        for crawled_item in self.__crawl_from_google_images():
+            file_url = self.__save_image_to_storage(crawled_item)
+
+            color = {
+                'file': file_url,
+                'name': crawled_item['color_name'],
+                'code': crawled_item['color_code']
+            }
+
+            api_instance.add_color(color)
+
 
 if __name__ == '__main__':
-  try:
-    api_instance = Colors()
-
-    data = crawl_from_google_images()
-
-    for item in data:
-      file_name = download_image(item['url'])
-      file = save_image_to_storage(item['color_name'], file_name)
-
-      color = {}
-      color['file'] = file
-      color['name'] = item['color_name']
-      color['code'] = item['color_code']
-      api_response = api_instance.add_color(color)
-  except Exception as e:
-    print("Exception when calling add_color: %s\n" % e)
-
+    args = parser.parse_args()
+    try:
+        gs = GoogleSaver(directory=args.jsondir)
+        gs.execute()
+    except Exception as e:
+        print("Exception when calling add_color: %s\n" % e)
