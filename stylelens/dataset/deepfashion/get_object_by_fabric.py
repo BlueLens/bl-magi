@@ -2,6 +2,7 @@ from __future__ import print_function
 from stylelens_dataset.objects import Objects
 from pprint import pprint
 import os
+import string
 import time
 import tensorflow as tf
 import urllib.request as urllib
@@ -41,15 +42,17 @@ def main(_):
     attrs = get_attribute_clothes()
     for attr in attrs:
       print(attr['name'])
+      attr_name = attr['name'].replace(" ", "_")
+      
       offset = 0
       limit = 100
 
       os.chdir(fabric_dataset_path)
       try:
-        os.mkdir(attr['name'])
+        os.mkdir(attr_name)
       except FileExistsError:
         pass
-      os.chdir(attr['name'])
+      os.chdir(attr_name)
       
 
       while True:
@@ -64,7 +67,7 @@ def main(_):
           break
         else:
           offset = offset + limit
-
+  
   except Exception as e:
     print("Exception when calling get_images_by_source: %s\n" % e)
 

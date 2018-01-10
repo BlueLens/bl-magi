@@ -22,12 +22,20 @@ from datasets import cifar10
 from datasets import flowers
 from datasets import imagenet
 from datasets import mnist
+#---------add---------------
+from datasets import fabric 
+from datasets import color
+#--------------------------
 
 datasets_map = {
     'cifar10': cifar10,
     'flowers': flowers,
     'imagenet': imagenet,
     'mnist': mnist,
+    #-------add--------
+    'fabric': fabric,  
+    'color': color,    
+    #-----------------
 }
 
 

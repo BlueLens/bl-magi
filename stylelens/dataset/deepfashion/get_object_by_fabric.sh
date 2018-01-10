@@ -8,4 +8,4 @@ export DB_DATASET_PORT="27017"
 echo $PYTHONPATH
 
 python get_object_by_fabric.py \
-    --fabric_dataset_path=/home/lion/fabric_dataset/ 
+    --fabric_dataset_path=/home/lion/attr_dataset/fabric_dataset

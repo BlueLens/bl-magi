@@ -34,7 +34,7 @@ tf.app.flags.DEFINE_string(
     'train_dir', '/tmp/tfmodel/',
     'Directory where checkpoints and event logs are written to.')
 
-tf.app.flags.DEFINE_integer('num_clones', 1,
+tf.app.flags.DEFINE_integer('num_clones', 7,
                             'Number of model clones to deploy.')
 
 tf.app.flags.DEFINE_boolean('clone_on_cpu', False,
@@ -187,7 +187,7 @@ tf.app.flags.DEFINE_string(
     'as `None`, then the model_name flag is used.')
 
 tf.app.flags.DEFINE_integer(
-    'batch_size', 32, 'The number of samples in each batch.')
+    'batch_size', 91, 'The number of samples in each batch.')
 
 tf.app.flags.DEFINE_integer(
     'train_image_size', None, 'Train image size')
@@ -200,16 +200,16 @@ tf.app.flags.DEFINE_integer('max_number_of_steps', None,
 #####################
 
 tf.app.flags.DEFINE_string(
-    'checkpoint_path', None,
+    'checkpoint_path', '',
     'The path to a checkpoint from which to fine-tune.')
 
 tf.app.flags.DEFINE_string(
-    'checkpoint_exclude_scopes', None,
+    'checkpoint_exclude_scopes', '',
     'Comma-separated list of scopes of variables to exclude when restoring '
     'from a checkpoint.')
 
 tf.app.flags.DEFINE_string(
-    'trainable_scopes', None,
+    'trainable_scopes', '',
     'Comma-separated list of scopes to filter the set of variables to train.'
     'By default, None would train all the variables.')
 
