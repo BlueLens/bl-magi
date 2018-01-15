@@ -42,6 +42,7 @@ from datasets import download_and_convert_mnist
 #-------------------add--------------------------
 from datasets import download_and_convert_fabric
 from datasets import download_and_convert_color
+from datasets import download_and_convert_category
 #-----------------------------------------------
 
 FLAGS = tf.app.flags.FLAGS
@@ -74,6 +75,8 @@ def main(_):
     download_and_convert_fabric.run(FLAGS.dataset_dir)
   elif FLAGS.dataset_name == 'color':   
     download_and_convert_color.run(FLAGS.dataset_dir)
+  elif FLAGS.dataset_name == 'category':   
+    download_and_convert_category.run(FLAGS.dataset_dir)
   #-----------------------------------------------
   else:
     raise ValueError(

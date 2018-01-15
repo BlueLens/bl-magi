@@ -25,6 +25,7 @@ from datasets import mnist
 #---------add---------------
 from datasets import fabric 
 from datasets import color
+from datasets import category 
 #--------------------------
 
 datasets_map = {
@@ -34,7 +35,8 @@ datasets_map = {
     'mnist': mnist,
     #-------add--------
     'fabric': fabric,  
-    'color': color,    
+    'color': color, 
+    'category': category, 
     #-----------------
 }
 
