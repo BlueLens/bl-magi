@@ -12,4 +12,4 @@ python object_detection/export_inference_graph.py \
     --input_type image_tensor \
     --pipeline_config_path $MODEL_BASE_PATH/models/model/ssd_inception_v2_3class.config \
     --trained_checkpoint_prefix ${TRAIN_PATH} \
-    --output_directory output_inference_graph.pb
+    --output_directory output_inference_graph_$1.pb

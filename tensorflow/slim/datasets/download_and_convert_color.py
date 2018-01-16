@@ -36,14 +36,12 @@ import tensorflow as tf
 
 from datasets import dataset_utils
 
-# The URL where the Flowers data can be downloaded.
-#_DATA_URL = 'http://download.tensorflow.org/example_images/flower_photos.tgz'
 
 # The number of images in the validation set.
-_NUM_VALIDATION = 11583
+_NUM_VALIDATION = 10736
 
 # Seed for repeatability.
-_RANDOM_SEED = 0
+_RANDOM_SEED = 5
 
 # The number of shards per dataset split.
 _NUM_SHARDS = 5
@@ -137,14 +135,11 @@ def _convert_dataset(split_name, filenames, class_names_to_ids, dataset_dir):
             sys.stdout.flush()
 
             # Read the filename:
-            image_data = tf.gfile.FastGFile(filenames[i], 'rb').read()
+            image_data = tf.gfile.FastGFile(filenames[i], 'rb').read()  
             height, width = image_reader.read_image_dims(sess, image_data)
-
             class_name = os.path.basename(os.path.dirname(filenames[i]))
             class_id = class_names_to_ids[class_name]
-
-            example = dataset_utils.image_to_tfexample(
-                image_data, b'jpg', height, width, class_id)
+            example = dataset_utils.image_to_tfexample(image_data, b'jpg', height, width, class_id)
             tfrecord_writer.write(example.SerializeToString())
 
   sys.stdout.write('\n')
@@ -161,7 +156,7 @@ def _clean_up_temporary_files(dataset_dir):
   filepath = os.path.join(dataset_dir, filename)
   tf.gfile.Remove(filepath)
 
-  tmp_dir = os.path.join(dataset_dir, 'images')
+  #tmp_dir = os.path.join(dataset_dir, 'images')
   tf.gfile.DeleteRecursively(tmp_dir)
 
 
@@ -199,14 +194,12 @@ def run(dataset_dir):
   validation_filenames = photo_filenames[:_NUM_VALIDATION]
 
   # First, convert the training and validation sets.
-  _convert_dataset('train', training_filenames, class_names_to_ids,
-                   dataset_dir)
-  _convert_dataset('validation', validation_filenames, class_names_to_ids,
-                   dataset_dir)
+  _convert_dataset('train', training_filenames, class_names_to_ids, dataset_dir)
+  _convert_dataset('validation', validation_filenames, class_names_to_ids, dataset_dir)
 
   # Finally, write the labels file:
   labels_to_class_names = dict(zip(range(len(class_names)), class_names))
   dataset_utils.write_label_file(labels_to_class_names, dataset_dir)
 
   #_clean_up_temporary_files(dataset_dir)
-  print('\nFinished converting the Flowers dataset!')
+  print('\nFinished converting the Colors dataset!')

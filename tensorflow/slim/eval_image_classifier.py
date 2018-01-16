@@ -20,15 +20,17 @@ from __future__ import print_function
 
 import math
 import tensorflow as tf
+import os
 
 from datasets import dataset_factory
 from nets import nets_factory
 from preprocessing import preprocessing_factory
 
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 slim = tf.contrib.slim
 
 tf.app.flags.DEFINE_integer(
-    'batch_size', 7, 'The number of samples in each batch.')
+    'batch_size', 42, 'The number of samples in each batch.')
 
 tf.app.flags.DEFINE_integer(
     'max_num_batches', None,
