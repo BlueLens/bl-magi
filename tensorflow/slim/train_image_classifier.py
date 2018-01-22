@@ -127,11 +127,11 @@ tf.app.flags.DEFINE_float('rmsprop_decay', 0.9, 'Decay term for RMSProp.')
 
 tf.app.flags.DEFINE_string(
     'learning_rate_decay_type',
-    'fixed',
+    'exponential',
     'Specifies how the learning rate is decayed. One of "fixed", "exponential",'
     ' or "polynomial"')
 
-tf.app.flags.DEFINE_float('learning_rate', 0.005, 'Initial learning rate.')
+tf.app.flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
 
 tf.app.flags.DEFINE_float(
     'end_learning_rate', 0.0001,
@@ -144,7 +144,7 @@ tf.app.flags.DEFINE_float(
     'learning_rate_decay_factor', 0.94, 'Learning rate decay factor.')
 
 tf.app.flags.DEFINE_float(
-    'num_epochs_per_decay', 5000.0,
+    'num_epochs_per_decay', 3.0,
     'Number of epochs after which learning rate decays.')
 
 tf.app.flags.DEFINE_bool(
@@ -187,12 +187,12 @@ tf.app.flags.DEFINE_string(
     'as `None`, then the model_name flag is used.')
 
 tf.app.flags.DEFINE_integer(
-    'batch_size', 126, 'The number of samples in each batch.')
+    'batch_size', 192, 'The number of samples in each batch.')
 
 tf.app.flags.DEFINE_integer(
     'train_image_size', None, 'Train image size')
 
-tf.app.flags.DEFINE_integer('max_number_of_steps', None,
+tf.app.flags.DEFINE_integer('max_number_of_steps', '10000000',
                             'The maximum number of training steps.')
 
 #####################
@@ -200,16 +200,16 @@ tf.app.flags.DEFINE_integer('max_number_of_steps', None,
 #####################
 
 tf.app.flags.DEFINE_string(
-    'checkpoint_path', '',
+    'checkpoint_path', None,
     'The path to a checkpoint from which to fine-tune.')
 
 tf.app.flags.DEFINE_string(
-    'checkpoint_exclude_scopes', '',
+    'checkpoint_exclude_scopes', None,
     'Comma-separated list of scopes of variables to exclude when restoring '
     'from a checkpoint.')
 
 tf.app.flags.DEFINE_string(
-    'trainable_scopes', '',
+    'trainable_scopes', None,
     'Comma-separated list of scopes to filter the set of variables to train.'
     'By default, None would train all the variables.')
 

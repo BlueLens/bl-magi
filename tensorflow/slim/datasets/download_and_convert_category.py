@@ -38,13 +38,13 @@ from datasets import dataset_utils
 
 
 # The number of images in the validation set.
-_NUM_VALIDATION = 32136 
+_NUM_VALIDATION = 57828 
 
 # Seed for repeatability.
 _RANDOM_SEED = 5
 
 # The number of shards per dataset split.
-_NUM_SHARDS = 5
+_NUM_SHARDS = 225
 
 
 class ImageReader(object):
