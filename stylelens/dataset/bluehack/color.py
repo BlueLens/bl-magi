@@ -29,7 +29,7 @@ COLOR_DATA = [
 ]
 
 parser = argparse.ArgumentParser(description='ArgParser')
-parser.add_argument('--jsondir', type=str, default=os.path.join(os.path.expanduser('~'), 'Downloads/google/'),
+parser.add_argument('--jsondir', type=str, default=os.path.join(os.path.expanduser('~'), './color_data/'),
                     help='The directory location stored crawled data from google search')
 
 AWS_ACCESS_KEY = os.environ['AWS_ACCESS_KEY'].replace('"', '')
