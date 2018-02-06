@@ -17,7 +17,7 @@ def add_text(text_code, keyword):
 
 if __name__ == '__main__':
   try:
-    text_dataset = open(TEXT_DATASET_FILE, 'r')
+    text_dataset = open(TEXT_DATASET_FILE, 'r', encoding='UTF-8')
     texts = []
     for pair in text_dataset.readlines():
       map = pair.strip().split(':')
@@ -25,7 +25,7 @@ if __name__ == '__main__':
       keywords = list(set(tmp))
       text_code = str(map[0])
       for keyword in keywords:
-        print('' + text_code + ":" + keyword)
+        print(u'' + text_code + ":" + keyword)
         add_text(text_code, keyword)
   except Exception as e:
     print(e)
