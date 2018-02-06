@@ -1,19 +1,19 @@
-1:티셔츠,t_shirt,tee,티셔츠,티,반팔티,반팔,긴팔,t-shirts,sleeveless,나시,민소매,슬리브리스,nasi,져지,저지,래쉬가드,rashguard,래쉬가드상의,레쉬가드,레쉬가드상의,Tank,Tee,Henley,Jersey
+1:t_shirt,티셔츠,tshirts,tee,반팔티,반팔,긴팔,sleeveless,나시티,민소매티,슬리브리스티,Tank,Tee,Henley,Jersey
 2:크롭탑,crop_top,크롭탑,crop_top,croptop,크롭티,crop,배꼽티,브라,브래지어,bra,brassiere,bralette,브라렛,앞후크,노와이어브라
-3:블라우스,blouse,블라우스,blouse,Blouse
-4:셔츠,shirt,셔츠,남방,shirts,Button-Down,Flannel 
-5:스웨터,sweater,니트,스웨터,knit,Turtleneck,Sweater
-6:스웨트셔츠,sweatshirt,맨투맨,mantoman,mtm,sweatshirt,후드,후드집업,hood,후디,Hoodie,Poncho
-7:자켓,jaket,jk,자켓,jaket,점퍼,jp,jumper,패딩,pd,padding,cardigan,가디건,cd,베스트,조끼,vest,져지,저지,Anorak,Bomber,Jacket,Jersey,blazer,Cardigan
-8:코트,coat,ct,코트,coat,야상,롱패딩,long패딩,오버사이즈코트,Parka,Peacoat,Coat
-9:팬츠,pants,pants,스키니,skinny,팬츠,바지,슬랙스,slacks,크롭팬츠,멜빵바지,멜빵팬츠,레깅스,leggings,파자마바지,잠옷바지,9부바지,7부바지,Chinos,Capris,chinos,culottes,Gauchos,Jodhpurs,joggers,leggins,sweatpants
-10:청바지,jeans,jeans,청바지,돌청,흑청,진청,중청,연청,녹청,demin jeans,washing,워싱데님,워싱진,데님진,jean,jeans
-11:반바지,shorts,반바지,shorts,숏팬츠,핫팬츠,팬티,panty,panties,속바지,이너팬츠,트렁크,cutoffs,shorts,sweatshorts,trunks
-12:치마,skirt,치마,스커트팬츠,skirtpants,스커트,미니치마,미니skirt,mini스커트,mini치마,miniskirt,skirt,스커트,skirt,미디스커트,미디치마,미디skirt,midi스커트,midi치마,midiskirt,스커트,skirt,미디스커트,미디치마,미디skirt,midi스커트,midi치마,midiskirt,스커트,skirt,롱스커트,롱치마,롱skirt,long스커트,long치마,longskirt,원피스,onepiece,미니원피스,미니ops,mini원피스,miniops,원피스,onepiece,skirt
-13:드레스,dress,미니드레스,minidress,minidress,미디드레스,슬립,가운,slip,gown,비치원피스,비치드레스,롱원피스,롱ops,롱dress,롱드레스,long원피스,longops,longdress,long드레스,파티드레스,party,partydress,기모노,sarong,Caftan,Cape,Dress,Kaftan,Nightdress,Robe,Romper,Shirtdress,Sundress,kimono
-14:점프슈트,jumpsuit,점프수트,점프슈트,바디수트,jumpsuit,Jumpsuit
-15:속옷,underwear,속옷세트,홀겹세트,홀겹set,푸시업세트,기본패드세트,기본패드set,브라팬티set,브라팬티세트,브라세트,브라set,bra세트,braset,pantyset,팬티세트,panty세트,팬티set,파자마,홈웨어,잠옷,homewear,pajamas
-16:비치웨어,beachwear,수영복,비키니,bikini,모노키니,monokini,원피스수영복
-17:가방,bag,숄더 백,숄더 bag,shoulder bag,shoulder 백,크로스 백,크로스 bag,cross 백,cross bag,토드 백,토드 bag,tote 백,tote bag,클러치,cluth,미니 백,미니 bag,mini 백,mini bag,백팩,backpack,파우치,pouch,에코 백,에코 bag,eco 백,eco bag,지갑,wallet
-18:신발,shoes,heel,platform heel,stretto heel,chunky heel,open toe heel,sling back heel,evening sandal,wedge heel,gladiator shoes,t strap heel,d orsay heel,pump heel,cone heel,peep toe heel,stiletto heel,scarpin heel,kitten heel,ankle strap heel,ruby slipper heel,spool heel,lobster claw heel,party heel,mid heel,high heel,extra high heel,heeled sandals,heeled oxfords,스틸레토 힐,하이 힐,미들 힐,앵클 힐,메리제인 힐,통굽 힐,포러 힐,워커 힐,부츠 힐,청키 힐,펌프스 힐,직사각 힐,슬링백 힐,플랫폼 힐,오픈토 힐,슬링 벡,이브닝 샌들,글래디에이터 슈즈,티스트랩 힐,웨지 힐,글래디에이터 힐,티 스트랩 힐,펌프 힐,콘 힐,핍 토 힐,키튼 힐,앵클 스트랩 힐,루비 슬리퍼 힐,스풀 힐,파티 힐,엑스트라 하이 힐,힐드 샌들,힐드 옥스포드,단화,플랫,로퍼,flat,flat shoes,loafer,부츠,boots,워커,walker,운동화,스니커즈,sneakers,running shoes,슬리퍼,쪼리,slipper,jesus shoes
+3:블라우스,blouse,블라우스,blouse,bl,Blouse
+4:셔츠,shirt,셔츠,남방,shirts,nb,Button-Down,Flannel
+5:스웨터,sweater,니트,스웨터,knit,nt,Turtleneck,Sweater
+6:스웨트셔츠,sweatshirt,맨투맨,mantoman,mtm,sweatshirt,후드티,hood,후드T,Hoodie,Poncho
+7:자켓,jaket,jk,점퍼,jumper,jp,가디건,cardigan,cd,조끼,베스트,vest,후드집업,Anorak,Bomber,Jacket,Jersey,blazer,Cardigan
+8:코트,coat,ct,롱패딩,long패딩,Parka,Peacoat,Coat
+9:팬츠,pants,pants,팬츠,바지,슬랙스,slacks,레깅스,leggings,pt,Chinos,Capris,chinos,culottes,Gauchos,Jodhpurs,joggers,leggins,sweatpants
+10:청바지,jeans,jean,청바지,워싱진,데님진,스키니진,블랙진,화이트진,데님팬츠,데님바지,제깅스,jeggings,jeans
+11:반바지,shorts,반바지,쇼츠,shorts,숏팬츠,핫팬츠,팬티,panty,panties,속바지,이너팬츠,트렁크,하프팬츠,쇼트팬츠,cutoffs,shorts,sweatshorts,trunks
+12:치마,skirt,치마,skirt,스커트,sk,치마바지,스커트팬츠,skirtpants,skirt
+13:드레스,dress,dress,드레스,슬립,가운,slip,gown,원피스,ops,onepiece,기모노,sarong,Caftan,Cape,Dress,Kaftan,Nightdress,Robe,Romper,Shirtdress,Sundress,kimono
+14:점프슈트,jumpsuit,점프수트,점프슈트,바디수트,바디슈트,bodysuit,jumpsuit,멜빵바지,멜빵팬츠,Jumpsuit
+15:속옷,underwear,속옷세트,속옷set,홀겹세트,홀겹set,푸시업세트,푸시업set,기본패드세트,기본패드set,브라팬티set,브라팬티세트,브라세트,브라set,bra세트,braset,pantyset,팬티세트,panty세트,팬티set,파자마,홈웨어,잠옷,homewear,pajamas,이너브라
+16:비치웨어,beachwear,수영복,비키니,bikini,모노키니,monokini,워터레깅스,커버탑
+17:가방,bag,숄더백,숄더bag,shoulder백,shoulderbag,크로스백,크로스bag,cross백,crossbag,토트백,토트bag,토드백,토드bag,tote백,totebag,클러치,clutch,보스톤백,보스톤bag,보스턴백,보스턴bag,boston백,bostonbag,미니백,미니bag,mini백,minibag,네트백,네트bag,net백,netbag,백팩,백pack,back팩,backpack,왕골백,힙색,Hipssaek,쇼퍼백,쇼퍼bag,shopper백,shopperbag,퀼팅백,퀼팅bag,quilting백,quiltingbag,밤부백,밤부bag,bamboo백,bamboobag,라탄백,라탄bag,rattan백,rattanbag,바스켓백,바그켓bag,basket백,basketbag,주머니백,주머니bag,pocket백,pocketbag,비치백,비치bag,beach백,beachbag,스퀘어백,스퀘어bag,square백,squarebag,라운드백,라운드bag,round백,roundbag,캔버스백,캔버스bag,canvas백,canvasbag,멀티백,멀티bag,multi백,multibag,조리백,파우치,pouch,에코백,에코bag,eco백,ecobag,지갑,wallet
+18:신발,shoes,슈즈,shoes,heel,스틸레토힐,하이힐,미들힐,앵클힐,메리제인힐,통굽힐,포러힐,워커힐,부츠힐,청키힐,펌프스힐,직사각힐,슬링백,플랫폼힐,오픈토힐,티스트랩힐,웨지힐,글래디에이터힐,티스트랩힐,펌프힐,콘힐,핍토힐,키튼힐,앵클스트랩힐,루비슬리퍼힐,스풀힐,파티힐,엑스트라하이힐,힐드옥스포드,운동화,쪼리,단화,플랫,flat,로퍼,loafer,스니커즈,sneakers,샌들,샌달,sandal,슬리퍼,slipper,펌프스,워커,walker,부츠,boots,슬립온,키높이
 19:기타,etc,양말,socks,삭스,모자,hat,cap,캡,스트로 햇,폴링 햇,볼 캡,마도로스 캡,라운드 캡,볼캡,스타킹,타이즈,stocking,tights,스카프,머플러,scarf,muffler,시계,watch,벨트,belt,귀걸이,이어링,ear ring,earrings,earring,목걸이,necklace,네크리스,반지,ring,초커,쵸커,choker,팔찌,발찌,bracelet,ankle bracelet,foot bracelet,헤어 밴드,헤어 핀,헤어 핀,머리띠,hair band,머리 끈,머리 끈,헤어 끈,헤어
