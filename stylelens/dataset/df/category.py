@@ -25,6 +25,5 @@ if __name__ == '__main__':
       class_code = str(map[1])
 
       add_category(name, class_code)
-
   except Exception as e:
     print(e)
