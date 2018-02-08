@@ -63,7 +63,11 @@ if __name__ == '__main__':
     else:
       offset = offset + limit
 
+
     for img in images:
+      if 'url_with_box' in img:
+        continue
+
       img_file = download_image(img.get('url'))
       image = Image.open(img_file)
       image_np = load_image_into_numpy_array(image)
