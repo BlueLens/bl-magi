@@ -19,6 +19,7 @@ if __name__ == '__main__':
   try:
     text_dataset = open(TEXT_DATASET_FILE, 'r', encoding='UTF-8')
     texts = []
+    cnt = 0
     for pair in text_dataset.readlines():
       map = pair.strip().split(':')
       tmp = map[1].strip().split(',')
@@ -27,5 +28,7 @@ if __name__ == '__main__':
       for keyword in keywords:
         print(u'' + text_code + ":" + keyword)
         add_text(text_code, keyword)
+        cnt += 1
+    print('total count: ' + str(cnt))
   except Exception as e:
     print(e)
