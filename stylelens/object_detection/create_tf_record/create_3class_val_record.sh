@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source activate bl-magi
-export PYTHONPATH=$PYTHONPATH:`pwd`/../../tensorflow:`pwd`/../../slim
+export PYTHONPATH=$PYTHONPATH:`pwd`/../../../tensorflow:`pwd`/../../../slim
 #export MODEL_DATASET_PATH='gs://bluelens-style-model/object_detection'
 export DATASET_PATH='/dataset/deepfashion3'
 

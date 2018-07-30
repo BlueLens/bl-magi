@@ -31,9 +31,9 @@ slim = tf.contrib.slim
 
 _FILE_PATTERN = 'category_%s_*.tfrecord'
 
-SPLITS_TO_SIZES = {'train': 231396, 'validation': 57828}
+SPLITS_TO_SIZES = {'train': 236827, 'validation': 57206}
 
-_NUM_CLASSES = 50 
+_NUM_CLASSES = 14
 
 _ITEMS_TO_DESCRIPTIONS = {
     'image': 'A category image of varying size.',

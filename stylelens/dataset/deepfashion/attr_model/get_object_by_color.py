@@ -31,8 +31,9 @@ def get_colors(classes):
     
   try:
     for clazz in classes:
-      color_name = clazz['name']
+      color_name = clazz
 
+      
       os.chdir(color_dataset_path)
       try:
         os.mkdir(color_name)
@@ -46,11 +47,13 @@ def get_colors(classes):
       limit = 100
       i = 0
       while True:
-        colors = api_instance.get_colors_by_name(color_name, offset=offset, limit=limit)
+        
+        colors = api_instance.get_colors_by_name(color_name, offset=offset,
+                limit=limit)
 
         for color in colors:
           _id = str(color['_id'])
-          download_image_from_url(color['file'], _id + '.jpg')
+          download_image_from_url(color['main_image'], _id + '.jpg')
         # pprint(color_object_list)
 
         if limit > len(colors):
@@ -82,9 +85,11 @@ def download_image_from_url(url, filename):
 
 def main(_):
   # log.info('Start generate-color-classifier-dataset')
-  classes = get_color_classes()
-  if classes:
-    get_colors(classes)
+  #classes = get_color_classes()
+  color_list = ['Black', 'Gray', 'Purple', 'Blue', 'Brown','Green', 'Orange', 'Red', 'Pink', 'Yellow','White', 'Navy', 'Beige'] 
+  classes = color_list
+  #if classes:
+  get_colors(classes)
 
 if __name__ == '__main__':
   tf.app.run()

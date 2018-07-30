@@ -2,9 +2,7 @@
 source activate bl-magi
 export PYTHONPATH=$PYTHONPATH:`pwd`/../../../tensorflow:`pwd`/../../../tensorflow/slim:
 export TRAIN_DIR_PATH='/home/lion/attr_dataset/color_model/model/train1'
-# export TRAIN_DIR_PATH='/home/lion/attr_dataset/color_model/model/train'
 export DATASET_DIR_PATH='/home/lion/attr_dataset/color_model/data/dataset1'
-# export DATASET_DIR_PATH='/home/lion/attr_dataset/color_model/data/dataset'
 export CHECKPOINT_PATH='/home/lion/attr_dataset/color_model/data/checkpoints/inception_v3.ckpt'
 
 

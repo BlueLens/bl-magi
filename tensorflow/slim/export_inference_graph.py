@@ -81,7 +81,7 @@ tf.app.flags.DEFINE_integer(
     'Batch size for the exported model. Defaulted to "None" so batch size can '
     'be specified at model runtime.')
 
-tf.app.flags.DEFINE_string('dataset_name', 'color',
+tf.app.flags.DEFINE_string('dataset_name', 'category',
                            'The name of the dataset to use with the model.')
 
 tf.app.flags.DEFINE_integer(

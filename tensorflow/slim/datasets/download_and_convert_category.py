@@ -38,10 +38,10 @@ from datasets import dataset_utils
 
 
 # The number of images in the validation set.
-_NUM_VALIDATION = 57828 
+_NUM_VALIDATION = 57206 
 
 # Seed for repeatability.
-_RANDOM_SEED = 5
+_RANDOM_SEED = 12
 
 # The number of shards per dataset split.
 _NUM_SHARDS = 225

@@ -52,7 +52,7 @@ def run(args):
 
       print(names)
 
-      logits, _ = getattr(inception,model_name)(processed_images, num_classes=12, is_training=False)
+      logits, _ = getattr(inception,model_name)(processed_images, num_classes=14, is_training=False)
       probabilities = tf.nn.softmax(logits)
       init_fn = slim.assign_from_checkpoint_fn(model_path, slim.get_model_variables('InceptionV3'))
       

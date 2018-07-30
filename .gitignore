@@ -12,6 +12,8 @@ Session.vim
 *~
 # auto-generated tag files
 tags
+
+
 ### Node template
 # Logs
 logs
@@ -82,6 +84,9 @@ Icon
 
 # Thumbnails
 ._*
+
+# Shell
+
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
@@ -244,3 +249,19 @@ nohup.out
 *.pbtxt
 *.record
 bin/
+*.jpg
+*.jpeg
+*.png
+
+# envs variable
+upload_model.sh
+generate_color_classifier_dataset.sh
+get_object_by_fabric.sh
+create_od_train_record.sh
+create_bottom_tfrecord.sh
+create_full_tfrecord.sh
+create_top_tfrecord.sh
+create_top_full_tfrecord.sh
+get_object_by_fabric.sh
+get_object_by_color.sh
+
